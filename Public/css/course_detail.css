@@ -1,0 +1,129 @@
+.h-bg{
+	background-color: #333;
+}
+
+.player{
+	height: 240px;
+	background: url(../images/play_class.png) no-repeat;
+	background-size: cover;
+	margin-top: 70px;
+}
+.p-nav-c{
+	width: 1200px;
+	height: 230px;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+.p-nav-path, .p-nav-path a{
+	font-size: 14px;
+	color: #E0E0E0;
+}
+.p-nav-path a:hover{
+	color: #fff;
+}
+.p-nav-tit{
+	color: #fff;
+	font-size: 34px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+}
+.p-nav-bt{
+	margin-top: 80px;
+}
+.p-nav-btli{
+	width: 160px;
+	height: 70px;
+	padding-left: 20px;
+	border-left: 1px solid #e2e2e2;
+	display: inline-block;
+}
+.p-nav-btli-sp{
+	display: block;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+}
+.p-nav-btli-s{
+	color: #fff;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+}
+
+.p-con{
+	width: 1200px;
+	min-height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.p-con-l{
+	width: 900px;
+	min-height: 300px;
+	float: left;
+}
+.p-con-intr{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+	color: #F64747;
+	font-weight: bold;
+	margin-top: 40px;
+}
+.p-con-intrc{
+	color: #2E2E2E;
+	line-height: 1.6em;
+	padding: 0 20px;
+	font-size: 15px;
+}
+
+
+.p-con-r{
+	float: right;
+	width: 300px;
+	height: 200px;
+}
+.r-go-study{
+	display: block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #F64747;
+	color: #fff;
+	margin: 40px auto 0; 
+	cursor: pointer;
+}
+.intr-ul{
+	
+}
+.intr-li{
+	height: 70px;
+	padding-top: 10px;
+}
+.intr-li-icon{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(../images/course_item.png) no-repeat;
+	background-color: #c2c2c2;
+	border-radius: 20px;
+	background-position: 10px 10px;
+}
+.intr-unit-tit{
+	margin-left: 60px;
+	height: 40px;
+	font-family: "Microsoft YaHei";
+}
+.intr-unit-tit h4{
+	font-weight: bold;
+	color: #222;
+}
+.intr-unit-tit p{
+	font-size: 14px;
+	color: #787d82;
+}

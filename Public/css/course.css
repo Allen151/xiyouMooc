@@ -1,0 +1,125 @@
+
+.h-bg{
+	background-color: #333;
+}
+.kecheng{
+	border-bottom: 2px solid #F64747;
+}
+
+
+.container{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	margin: 70px auto 0;
+}
+.cls-tit{
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+	border-bottom: 1px solid #e2e2e2;
+	padding-left: 10px;
+}
+.cls-nav{
+	height: 36px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.cls-nav-sp{
+	float: left;
+	color: #959595;
+	margin-right: 20px;
+	font-size: 12px;
+	padding-top: 4px;
+}
+.cls-nav ul{
+	margin-top: 10px;
+}
+.cls-nav ul li{
+	display: inline-block;
+	margin: 0 13px;
+	padding: 2px 4px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.cls-curr{
+	background-color: #F64747;
+	color: #fff;
+}
+.last{
+	margin-bottom: 20px;
+}
+
+
+.index-class-ul{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+}
+.index-class-li{
+	width: 280px;
+	height: 240px;
+	background-color: #f7f7f7;
+	float: left;
+	margin: 10px;
+	position: relative;
+}
+.index-class-li img{
+	width: 280px;
+	height: 160px;
+	cursor: pointer;
+}
+.index-class-li:hover b{
+	top: 36%;
+	opacity: 1;
+	filter: alpha(opacity=1);
+}
+.index-class-li b{
+	display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/play_bg.png) no-repeat;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s ease;
+}
+.index-class-li b:hover{
+	cursor: pointer;
+}
+.index-class-con{
+	width: 278px;
+	height: 79px;
+	border-color: #ccc;
+	border-right: 1px solid #e2e2e2;
+	border-left: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	margin-top: -4px;
+	color: #ADADAD;
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+}
+.i-li-titp{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	color: #646464;
+	margin-bottom: 6px;
+}
+.i-li-sl{
+	margin-left: 10px;
+}
+.i-li-sr{
+	margin-right: 10px;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}

@@ -1,0 +1,82 @@
+.h-bg{
+	background-color: #333;
+}
+
+.h-bg{
+	background-color: #333;
+}
+.taolun{
+	border-bottom: 2px solid #F64747;
+}
+
+
+.container{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	margin: 70px auto 0;
+}
+.talk-con{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.cls-tit{
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	font-family: "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+	border-bottom: 1px solid #e2e2e2;
+	padding-left: 10px;
+}
+
+.talk-text{
+	width: 600px;
+	height: 100px;
+	resize: none;
+	margin-top: 20px;
+}
+
+
+.talk-sub{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	cursor: pointer;
+	top: 80px;
+	left: 660px;
+	background-color: #F64747;
+	font-size: 16px;
+	color: #fff;
+}
+.talk-li{
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 4px;
+	height: 85px;
+}
+.talk-li img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	float: left;
+	
+}
+.talk-li .talkName{
+	height: 20px;
+	margin-bottom: 5px;
+}
+.talk-li p{
+	margin-left: 30px;
+	float: left;
+	height: 60px;
+	color: #959595;
+	width: 980px;
+}
+.talk-li span{
+	margin-left: 20px;
+	line-height: 70px;
+	color: #959595;
+}

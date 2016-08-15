@@ -1,0 +1,17 @@
+.h-bg{
+	background-color: #333;
+}
+
+.playcour{
+	margin-top: 70px;
+}
+.p-goback{
+	width: 100px;
+	text-align: center;
+	height: 60px;
+	line-height: 50px;
+	color: #fff;
+	cursor: pointer;
+}
+
+

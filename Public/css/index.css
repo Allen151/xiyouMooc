@@ -1,0 +1,136 @@
+
+.container{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.index-first{
+	width: 100%;
+	height: 651px;
+	background: url(../images/index_bg1.png); 
+}
+.index-mod{
+	width: 100%;
+	min-height: 400px;
+}
+.write-col{
+	background-color: #fff;
+}
+.hui-col{
+	background-color: #EEF1F2;
+}	
+
+
+.content-one{
+	width: 1000px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.c-one-img{
+	float: left;
+}
+.c-one-div{
+	width: 400px;
+	height: 200px;
+	margin-top: 100px;
+	float: left;
+}
+.word-one{
+	margin-left: 100px;
+	background: url(../images/index_word1.png);
+}
+.word-two{
+	margin-right: 100px;
+	background: url(../images/index_word2.png);
+}
+.con-class{
+	width: 1200px;
+}
+.class-tit{
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	font-size: 24px;
+	color: #EB4F38;
+	font-family: "Microsoft YaHei";
+}
+.index-class-ul{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+}
+.index-class-li{
+	width: 280px;
+	height: 240px;
+	background-color: #f7f7f7;
+	float: left;
+	margin: 10px;
+	position: relative;
+}
+.index-class-li img{
+	width: 280px;
+	height: 160px;
+	cursor: pointer;
+}
+.index-class-li:hover b{
+	top: 36%;
+	opacity: 1;
+	filter: alpha(opacity=1);
+}
+.index-class-li b{
+	display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/play_bg.png) no-repeat;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s ease;
+}
+.index-class-li b:hover{
+	cursor: pointer;
+}
+.index-class-con{
+	width: 278px;
+	height: 79px;
+	border-color: #ccc;
+	border-right: 1px solid #e2e2e2;
+	border-left: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	margin-top: -4px;
+	color: #ADADAD;
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+}
+.i-li-titp{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	color: #646464;
+	margin-bottom: 6px;
+}
+.i-li-sl{
+	margin-left: 10px;
+}
+.i-li-sr{
+	margin-right: 10px;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+
+
+
+
+
+
+
