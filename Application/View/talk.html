@@ -1,0 +1,33 @@
+
+
+<link rel="stylesheet" type="text/css" href="Public/css/talk.css">
+
+
+<div class="container">
+
+	<p class="cls-tit">学习讨论区</p>
+	<div class="talk-con">
+		<textarea class="talk-text" id="talk-text" placeholder="请输入内容,不超过150字"></textarea>
+		<div class="talk-sub" id="talk-sub">发表</div>
+	</div>
+	<br>
+	<ul class="talk-ul" id="talk-ul">
+		<?php 
+			for($i=0;$i<count($talkInfo,0);$i++){
+			$res = $talkInfo[$i] 			
+		?>
+		<li class="talk-li">
+			<img src="<?php echo $res['imgsrc'] ?>">
+			<p class="talkName"><?php echo $res['username'] ?></p>
+			<p><?php echo $res['word'] ?></p>
+			<span><?php echo $res['date'] ?></span>
+		</li>
+		<?php 
+						
+		}
+		?>
+	</ul>
+</div>
+<script type="text/javascript" src="Application/js/public/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="Application/js/private/public/login.js"></script>
+<script type="text/javascript" src="Application/js/private/talk/talk.js"></script>

@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="Public/css/percenter.css">
+
+
+
+<div class="std-img"></div>
+<div class="container">
+	<div class="per-me">
+		<img src="<?php echo $_SESSION['user']["img"] ?>">
+		<span><?php echo $_SESSION['user']["username"] ?></span>
+	</div>
+	
+
+	<ul class="per-ul" onclick="tuiding(event)">
+		<?php
+
+			for($i=0;$i<count($result);$i++){
+		?>
+		<li class="per-li">
+			<img class="per-img" src="<?php echo $result[$i]['imgSrc'] ?>">
+			<div class="per-mes">
+				<p class="per-mes-p"><?php echo $result[$i]['conIntro'] ?></p>
+				<p class="per-mes-p">
+					<span class=""><?php echo $result[$i]['pushTime'] ?></span>	
+					<span class="per-mes-sp"><?php echo $result[$i]['studyPer'] ?></span>	
+				</p>
+			</div>
+			<div class="per-chose" dataid="<?php echo $result[$i]['courseId'] ?>">退订</div>
+		</li>
+		<?php
+			}
+		?>
+	</ul>
+</div>
+</body>
+	<script type="text/javascript" src="Application/js/public/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="Application/js/private/public/login.js"></script>
+	<script type="text/javascript">
+		function tuiding(event) {
+			var dataid = event.target.getAttribute('dataid');
+			$.ajax({
+				type: 'get',
+				url: 'index.php?c=percenter&a=unChooseSour',
+				data: {dataid: dataid},
+				success: function(data){
+					console.log(data);
+					location.reload();
+				}
+			})
+		}
+	</script>

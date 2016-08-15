@@ -1,0 +1,76 @@
+
+
+
+<link rel="stylesheet" type="text/css" href="Public/css/course.css">
+
+
+
+
+<!-- body -->
+<div class="container">
+	<p class="cls-tit">全部课程</p>
+	<!-- 课程列表选项 -->
+	<ul id="cls-list">
+		<li class="cls-nav" >
+			<span class="cls-nav-sp">方向</span>
+			<ul id="cls-dir">
+				<li datadir="1" datacurr="0">全部</li>
+				<li dataDir="qianduan" datacurr="1">前端开发</li>
+				<li dataDir="houduan" datacurr="2">后端开发</li>
+				<li dataDir="yidong" datacurr="3">移动开发</li>
+			</ul>
+		</li>
+		<li class="cls-nav" >
+			<span class="cls-nav-sp">分类</span>
+			<ul id="cls-kind">
+				<li datakind="1" datacurr="0">全部</li>
+				<?php
+					for($i=0;$i<count($res,0);$i++) {
+						$row = $res[$i];
+				?>
+				<li datakind="<?php echo $row['courKind'] ?>" datacurr="<?php echo $i+1 ?>"><?php echo $row['courKind']?></li>
+				<?php
+					}					
+				?>
+				<script type="text/javascript">
+					var query = '<?php echo  substr($_SERVER["QUERY_STRING"],17)?>';
+				</script>
+			</ul>
+		</li>
+		<li class="cls-nav last" >
+			<span class="cls-nav-sp">难度</span>
+			<ul id="cls-level">
+				<li datahardlevel="1" datacurr="0">全部</li>
+				<li datahardlevel="2" datacurr="1">初级</li>
+				<li datahardlevel="3" datacurr="2">中级</li>
+				<li datahardlevel="4" datacurr="3">高级</li>
+			</ul>
+		</li>
+	</ul>
+	<!-- 课程内容选项 -->
+	<ul class="index-class-ul" id="index-class-ul">
+	<?php
+		
+		$res = $_SERVER['QUERY_STRING'];		
+		
+		for($i=0;$i<count($result,0);$i++) {
+						$row = $result[$i];
+	?>
+		<li class="index-class-li" dataid=<?php echo $row['id'] ?>>
+			<b dataid=<?php echo $row['id'] ?>></b>
+			<img dataid=<?php echo $row['id'] ?> src="<?php echo $row['imgSrc'] ?>" data>
+			<div class="index-class-con" dataid=<?php echo $row['id'] ?>>
+				<p class="i-li-titp" dataid=<?php echo $row['id'] ?>><?php echo $row['conIntro'] ?></p>
+				<span class="i-li-sl l" dataid=<?php echo $row['id'] ?>><?php echo $row['pushTime'] ?></span>
+				<span class="i-li-sr r" dataid=<?php echo $row['id'] ?>><?php echo $row['studyPer'] ?>人已学习</span>
+			</div>
+		</li>
+	<?php
+		}
+
+	?>
+	</ul>
+</div>
+<script type="text/javascript" src="Application/js/public/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="Application/js/private/public/login.js"></script>
+<script type="text/javascript" src="Application/js/private/course/course.js"></script>
